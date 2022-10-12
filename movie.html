@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+        movie   
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/movie.css"><!-- 外部样式引用 -->
+        <link rel="stylesheet" href="font_p7eave2wlmc/iconfont.css">
+        
+    </head>
+    
+    <body>
+        <a id="dingbu"></a>   
+        <!-- 顶端锚点 -->
+        
+        <div class="container">
+            <nav>
+                <a href="index.html">主页</a>
+                <a href="for me.html">关于我</a>
+                <a href="movie.html">电影</a>
+                <a href="music.html">音乐</a>
+                <div class="animation"></div>
+            </nav>
+        </div>
+        
+        <div class="containbox">
+            <div class="box">
+                <div class="leftbtn">
+                    <span class="iconfont icon-zuo"></span>   
+                </div>
+                <a href="#Ajihua"><img src="img2/A计划.jpg" class="topfirst"></a>
+                <a href="#aomanyupianjian"><img src="img2/傲慢与偏见.jpg" class="topsecond"></a>
+                <a href="#nidemingzi"><img src="img2/你的名字.jpg" class="topcenter"></a>
+                <a href="#qiannvyouhun"><img src="img2/倩女幽魂.jpg" class="topfourth"></a>
+                <a href="#yingxiongbense"><img src="img2/英雄本色.jpg" class="topfifth"></a>
+                <a href="#taitannikehao"><img src="img2/泰坦尼克号.jpg" class="topsixth"></a>
+                <a href="#yanyezhiting"><img src="img2/言叶之庭.jpg" class="topseventh"></a>
+                <div class="rightbtn">
+                    <span class="iconfont icon-you"></span>
+                </div>
+            </div>
+            
+            <script>
+                const box = document.querySelector('.box')
+                const leftbtn = document.querySelector('.leftbtn');
+                const rightbtn = document.querySelector('.rightbtn');
+                leftbtn.onclick = function(){
+                    const topseventh = document.querySelector('.topseventh');
+                    const topfirst = document.querySelector('.topfirst');
+                    const topsecond = document.querySelector('.topsecond');
+                    const topcenter = document.querySelector('.topcenter');
+                    const topfourth = document.querySelector('.topfourth');
+                    const topfifth = document.querySelector('.topfifth');
+                    const topsixth = document.querySelector('.topsixth');
+                    topseventh.className = 'topsixth';
+                    topfirst.className = 'topseventh';
+                    topsecond.className='topfirst';
+                    topcenter.className = 'topsecond';
+                    topfourth.className='topcenter';
+                    topfifth.className='topfourth';
+                    topsixth.className = 'topfifth';
+                }
+                rightbtn.onclick = function(){
+                    const topseventh = document.querySelector('.topseventh');
+                    const topfirst = document.querySelector('.topfirst');
+                    const topsecond = document.querySelector('.topsecond');
+                    const topcenter = document.querySelector('.topcenter');
+                    const topfourth = document.querySelector('.topfourth');
+                    const topfifth = document.querySelector('.topfifth');
+                    const topsixth = document.querySelector('.topsixth');
+                    topseventh.className = 'topfirst';
+                    topfirst.className = 'topsecond';
+                    topsecond.className='topcenter';
+                    topcenter.className = 'topfourth';
+                    topfourth.className='topfifth';
+                    topfifth.className='topsixth';
+                    topsixth.className = 'topseventh';
+                }
+            </script>
+            
+        </div>
+        
+        <div class="main"><!-- 页面主框架 -->
+            <div class="center"><!-- 中央页面框架 -->
+                <a id="qiannvyouhun"></a> 
+                <div class="first"><!-- 倩女幽魂 -->
+                    
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/1297447/"><img src="img2/倩女幽魂.jpg" alt="" height="270px" width="180px"><p></a><!-- 倩女幽魂图片 -->
+                        
+                    </div>
+                    
+                    
+                    <div clss="allright"><!-- 倩女幽魂主要信息 -->
+                        导演: 程小东<p>
+                        编剧: 阮继志
+                        主演: 张国荣 / 王祖贤 / 午马 / 刘兆铭 / 林威 / 更多...<p>
+                        类型: 爱情 / 奇幻 / 武侠 / 古装<p>
+                        制片国家/地区: 中国香港<p>
+                        语言: 粤语<p>
+                        上映日期: 2011-04-30(中国大陆) / 1987-07-18(中国香港)<p>
+                        片长: 98分钟(香港) / 96分钟<p>
+                        又名: 倩女幽魂(87版) / 倩女幽魂：妖魔道 / A Chinese Ghost Story<p>
+                        IMDb: tt0093978  <p>
+                            <a href="https://www.bilibili.com/video/BV1z4411k7y1/?spm_id_from=333.337.search-card.all.click"><button class="bo" type="button" width="100px">预告片</button></a>
+                            <div id="topding"><a href="#dingbu" style="text-decoration:none"><span class="iconfont icon-dingbu"></span></a></div>         
+                            <script>
+                                var sBox = document.getElementById("topding")
+                                window.onscroll = function () {
+                                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                                sBox.style.position = "fixed";
+                                sBox.style.right = "15%";
+                                sBox.style.top="10%";
+                                if (scrollTop >= 450 && sBox.style.top == '10%') {
+                                    sBox.style.display='block';
+                                }
+                                else {
+                                    // sBox.style.position = 'absolute';
+                                    // sBox.style.top = '70%';
+                                    // sBox.style.right = "20%";
+                                    sBox.style.display='none';
+                                }
+                                }
+                            </script>
+                    </div>
+                    
+                </div>
+                <font>倩女幽魂剧照 · · · · · ·</font>
+                <div class="firstqnyh">
+                    <div class="qnyh1"><img src="img2/倩女幽魂1.jpg" width="170px" height="130px"></div>
+                    <div class="qnyh2"><img src="img2/倩女幽魂2.jpg" width="170px" height="130px"></div>
+                    <div class="qnyh3"><img src="img2/倩女幽魂3.jpg" width="170px" height="130px"></div>
+                    <div class="qnyh4"><img src="img2/倩女幽魂4.jpg" width="170px" height="130px"></div>
+                </div>
+                
+                <div class="second"><!-- 英雄本色 --><a id="yingxiongbense"></a>
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/1297574/"><img src="img2/英雄本色.jpg" alt="" height="270px" width="180px"><p></a><!-- 英雄本色图片 -->
+                        
+                    </div>
+                    <div clss="allright"><!-- 英雄本色主要信息 -->
+                        导演: 吴宇森<p>
+                        编剧: 陈庆嘉 / 吴宇森 / 梁淑华<p></p>
+                        主演: 周润发 / 狄龙 / 张国荣 / 朱宝意 / 李子雄 / 更多...<p></p>
+                        类型: 剧情 / 动作 / 犯罪<p></p>
+                        制片国家/地区: 中国香港<p></p>
+                        语言: 粤语 / 汉语普通话 / 英语<p></p>
+                        上映日期: 2017-11-17(中国大陆) / 1986-08-02(中国香港)<p></p>
+                        片长: 95分钟<p></p>
+                        又名: A Better Tomorrow / Gangland Boss<p></p>
+                        IMDb: tt0092263 <p></p>
+                        <a href="https://www.bilibili.com/video/BV1ov411z7Y9/?spm_id_from=333.337.search-card.all.click&vd_source=465fe23a8e74e555f06fbe7b992995ec"><button class="bo" type="button" width="100px">预告片</button></a> 
+
+                    </div>
+                
+                </div>
+                <font>英雄本色剧照 · · · · · ·</font>
+                <div class="secondyxbs">
+                    <div class="yxbs1"><img src="img2/英雄本色1.jpg" width="170px" height="130px"></div>
+                    <div class="yxbs2"><img src="img2/英雄本色2.jpg" width="170px" height="130px"></div>
+                    <div class="yxbs3"><img src="img2/英雄本色3.jpg" width="170px" height="130px"></div>
+                    <div class="yxbs4"><img src="img2/英雄本色4.jpg" width="170px" height="130px"></div>
+                </div>
+                
+                <div class="third"><!-- A计划 --><a id="Ajihua"></a>
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/1297909/"><img src="img2/A计划.jpg" alt="" height="270px" width="180px"><p></a><!-- A计划图片 -->
+                        
+                    </div>
+                    <div clss="allright"><!-- A计划主要信息 -->
+                        导演: 成龙<p>
+                        编剧: 邓景生 / 成龙<p></p>
+                        主演: 成龙 / 洪金宝 / 元彪 / 黄曼凝 / 狄威 / 更多...<p></p>
+                        类型: 喜剧 / 动作<p></p>
+                        制片国家/地区: 中国香港<p></p>
+                        语言: 粤语<p></p>
+                        上映日期: 1983-12-22(中国香港)<p></p>
+                        片长: 105分钟 / 97分钟(美国)<p></p>
+                        又名: Project A<p></p>
+                        IMDb: tt0085127<p></p>
+                        <a href="https://www.bilibili.com/video/BV1ft411x7gE/?spm_id_from=333.337.search-card.all.click""><button class="bo" type="button" width="100px">预告片</button></a> 
+                        
+                    </div>
+                </div>
+                <font>A计划剧照 · · · · · ·</font>
+                <div class="thirdajihua">
+                    <div class="ajihua1"><img src="img2/A计划1.jpg" width="170px" height="130px"></div>
+                    <div class="ajihua2"><img src="img2/A计划2.jpg" width="170px" height="130px"></div>
+                    <div class="ajihua3"><img src="img2/A计划3.jpg" width="170px" height="130px"></div>
+                    <div class="ajihua4"><img src="img2/A计划4.jpg" width="170px" height="130px"></div>
+                </div>
+
+                <div class="four"><!-- 你的名字 --><a id="nidemingzi"></a>
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/26683290/"><img src="img2/你的名字.jpg" alt="" height="270px" width="180px"><p></a><!-- 你的名字图片 -->
+                        
+                    </div>
+                    <div clss="allright"><!-- 你的名字主要信息 -->
+                        导演: 新海诚<p>
+                        编剧: 新海诚<p></p>
+                        主演: 神木隆之介 / 上白石萌音 / 长泽雅美 / 市原悦子 / 成田凌 / 更多...<p></p>
+                        类型: 剧情 / 爱情 / 动画<p></p>
+                        官方网站: www.kiminona.com<p></p>
+                        制片国家/地区: 日本<p></p>
+                        语言: 日语<p></p>
+                        上映日期: 2016-12-02(中国大陆) / 2016-08-26(日本)<p></p>
+                        片长: 106分钟<p></p>
+                        又名: 你的名字 / 君之名 / Your Name / Kimi no na wa.<p></p>
+                        IMDb: tt5311514     <p></p>
+                        <a href="https://www.bilibili.com/video/BV1ks411W7r5/?spm_id_from=333.337.search-card.all.click&vd_source=465fe23a8e74e555f06fbe7b992995ec""><button class="bo" type="button" width="100px">预告片</button></a> 
+                        
+                    </div>
+                
+                </div>
+                <font>你的名字剧照 · · · · · ·</font>
+                <div class="fourndmz">
+                    <div class="nidemingzi1"><img src="img2/你的名字1.jpg" width="170px" height="130px"></div>
+                    <div class="nidemingzi2"><img src="img2/你的名字2.jpg" width="170px" height="130px"></div>
+                    <div class="nidemingzi3"><img src="img2/你的名字3.jpg" width="170px" height="130px"></div>
+                    <div class="nidemingzi4"><img src="img2/你的名字4.jpg" width="170px" height="130px"></div>
+                </div>
+                
+                <div class="fifth"><!-- 泰坦尼克号 --><a id="taitannikehao"></a>
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/1292722/"><img src="img2/泰坦尼克号.jpg" alt="" height="270px" width="180px"><p></a><!-- 泰坦尼克号图片 -->
+                        
+                    </div>
+                    <div clss="allright"><!-- 泰坦尼克号主要信息 -->
+                        导演: 詹姆斯·卡梅隆<p>
+                        编剧: 詹姆斯·卡梅隆<p></p>
+                        主演: 莱昂纳多·迪卡普里奥 / 凯特·温丝莱特 / 比利·赞恩 / 凯西·贝茨<p></p>
+                        类型: 剧情 / 爱情 / 灾难<p></p>
+                        制片国家/地区: 美国 / 墨西哥 / 澳大利亚 / 加拿大<p></p>
+                        语言: 英语 / 意大利语 / 德语 / 俄语<p></p>
+                        上映日期: 1998-04-03(中国大陆)/ 1997-12-19(美国)<p></p>
+                        片长: 194分钟 / 227分钟(白星版)<p></p>
+                        又名: 铁达尼号(港/台)<p></p>
+                        IMDb: tt0120338   <p></p>
+                        <a href="https://www.bilibili.com/video/BV1G5411b79V/?spm_id_from=333.337.search-card.all.click&vd_source=465fe23a8e74e555f06fbe7b992995ec""><button class="bo" type="button" width="100px">预告片</button></a> 
+                        
+                    </div>
+                
+                </div>
+                <font>泰坦尼克号剧照 · · · · · ·</font>
+                <div class="fifthttnkh">
+                    <div class="taitannikehao1"><img src="img2/泰坦尼克号1.jpg" width="170px" height="130px"></div>
+                    <div class="taitannikehao2"><img src="img2/泰坦尼克号2.jpg" width="170px" height="130px"></div>
+                    <div class="taitannikehao3"><img src="img2/泰坦尼克号3.jpg" width="170px" height="130px"></div>
+                    <div class="taitannikehao4"><img src="img2/泰坦尼克号4.jpg" width="170px" height="130px"></div>
+                </div>
+                
+                <div class="sixth"><!-- 傲慢与偏见 --><a id="aomanyupianjian"></a>
+                    
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/1418200/"><img src="img2/傲慢与偏见.jpg" alt="" height="270px" width="180px"><p></a><!-- 傲慢与偏见图片 -->
+                        
+                    </div>
+                    
+                    <div clss="allright"><!-- 傲慢与偏见主要信息 -->
+                        导演: 乔·赖特<p>
+                        编剧: 简·奥斯汀 / 黛博拉·莫盖茨<p></p>
+                        主演: 凯拉·奈特莉 / 马修·麦克费登 / 唐纳德·萨瑟兰 / 布兰达·布莱斯<p></p>
+                        类型: 剧情 / 爱情<p></p>
+                        制片国家/地区: 法国 / 英国 / 美国<p></p>
+                        语言: 英语<p></p>
+                        上映日期: 2005-09-16(英国)<p></p>
+                        片长: 129 分钟 / 135 分钟(加拿大)<p></p>
+                        又名: 傲慢与偏见2005 / Pride And Prejudice<p></p>
+                        IMDb: tt0414387     <p></p>
+                        <a href="https://www.bilibili.com/video/BV1At41117mK/?spm_id_from=333.337.search-card.all.click"><button class="bo" type="button" width="100px">预告片</button></a> 
+                        
+                    </div>
+                </div>
+                <font>傲慢与偏见剧照 · · · · · ·</font>
+                <div class="sixthamypj">
+                    <div class="aomanyupianjian1"><img src="img2/傲慢与偏见1.jpg" width="170px" height="130px"></div>
+                    <div class="aomanyupianjian2"><img src="img2/傲慢与偏见2.jpg" width="170px" height="130px"></div>
+                    <div class="aomanyupianjian3"><img src="img2/傲慢与偏见3.jpg" width="170px" height="130px"></div>
+                    <div class="aomanyupianjian4"><img src="img2/傲慢与偏见4.jpg" width="170px" height="130px"></div>
+                </div>
+
+                <div class="seventh"><!-- 言叶之庭 --><a id="yanyezhiting"></a>
+                    
+                    <div class="allleft">
+                        <a href="https://movie.douban.com/subject/20470074/"><img src="img2/言叶之庭.jpg" alt="" height="270px" width="180px"><p></a><!-- 傲慢与偏见图片 -->
+                        
+                    </div>
+                    
+                    <div clss="allright"><!-- <!-- 言叶之庭主要信息 -->
+                        导演: 新海诚<p>
+                        编剧: 新海诚<p></p>
+                        主演: 入野自由 / 花泽香菜 / 平野文 / 前田刚 / 寺崎裕香 / 更多...<p></p>
+                        类型: 爱情 / 动画<p></p>
+                        制片国家/地区: 日本<p></p>
+                        语言: 日语<p></p>
+                        上映日期: 2013-05-31(日本)<p></p>
+                        片长: 46分钟(日本)<p></p>
+                        又名: 言语之庭 / 语言之庭 / Kotonoha no Niwa / The Garden of Words<p></p>
+                        IMDb: tt2591814<p></p>
+                        <a href="https://www.bilibili.com/video/BV1wx411c7cj/?spm_id_from=333.337.search-card.all.click&vd_source=465fe23a8e74e555f06fbe7b992995ec"><button class="bo" type="button" width="100px">预告片</button></a> 
+                        
+                    </div>
+                </div>
+                <font>言叶之庭剧照 · · · · · ·</font>
+                <div class="seventhyyzt">
+                    <div class="yanyezhiting1"><img src="img2/言叶之庭1.jpg" width="170px" height="130px"></div>
+                    <div class="yanyezhiting2"><img src="img2/言叶之庭2.jpg" width="170px" height="130px"></div>
+                    <div class="yanyezhiting3"><img src="img2/言叶之庭3.jpg" width="170px" height="130px"></div>
+                    <div class="yanyezhiting4"><img src="img2/言叶之庭4.jpg" width="170px" height="130px"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

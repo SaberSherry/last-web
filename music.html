@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>music</title>
+        <link rel="stylesheet" type="text/css" href="css/music.css"><!-- 外部样式引用 -->
+	</head>
+	<body>
+		<div class="container">
+            <nav>
+                <a href="index.html">主页</a>
+                <a href="for me.html">关于我</a>
+                <a href="movie.html">电影</a>
+                <a href="music.html">音乐</a>
+                <div class="animation"></div>
+            </nav>
+        </div>
+        <div class="main"><!-- 主框架 -->
+            
+            <div class="fmain"><!-- 次要框架 -->
+                
+                <div class="left"><!-- 次要框架中的左框架 -->
+                    
+                    <table width="50%" height="800px" border="0" cellspacing=0><!-- 表格宽度、高度、不显示外边框与内边框 -->
+                        <tr style="background-color:rgb(6, 230, 230);font-weight:bold;"><!-- 设置表格第一行的背景颜色，字体加粗 -->
+                            <td>点击播放</td>
+                            <td>歌曲</td>
+                            <td>演唱者</td>
+                            <td>专辑</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang1" type="button">播放</button></td>
+                            <td>Rain</td>
+                            <td>秦基博</td>
+                            <td>言ノ葉</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang2" type="button">播放</button></td>
+                            <td>傻女</td>
+                            <td>陈慧娴</td>
+                            <td>娴情</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang3" type="button">播放</button></td>
+                            <td>Beautiful World</td>
+                            <td>宇多田光</td>iss
+                            <td>Beautiful World/Kiss & Cry</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang4" type="button">播放</button></td>
+                            <td>真的爱你</td>
+                            <td>BEYOND</td>
+                            <td>BEYOND IV</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang5" type="button">播放</button></td>
+                            <td>初恋</td>
+                            <td>林志美</td>
+                            <td>什么是缘分</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang6" type="button">播放</button></td>
+                            <td>千年泪</td>
+                            <td>Tank</td>
+                            <td>天外飞仙电视原声带</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang7" type="button">播放</button></td>
+                            <td>让我留在你身边</td>
+                            <td>陈奕迅</td>
+                            <td>让我留在你身边</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang8" type="button">播放</button></td>
+                            <td>遗失的心跳</td>
+                            <td>萧亚轩</td>
+                            <td>I'm sorry</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang9" type="button">播放</button></td>
+                            <td>黑暗森林</td>
+                            <td>雲翼星辰</td>
+                            <td>黑暗森林</td>
+                        </tr>
+                        <tr>
+                            <td><button class="bofang10" type="button">播放</button></td>
+                            <td>上心</td>
+                            <td>郑欣宜</td>
+                            <td>故事的配角</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="right"><!-- 次要框架中的右框架 -->
+                    
+                    <img class="yinyue" src="img/言ノ葉 (言语)-秦基博 (はたもとひろ).jpg" ><!-- 设置播放器默认显示图片 -->
+                    <audio src="img/Rain-秦基博.mp3" ><!-- 设置播放器默认歌曲-->
+                    </audio>
+                    
+                    <div id="anniu"><!-- 按钮框架 -->
+                        
+                        <div id="kongzhi"><!-- 按钮框架中的第一部分控制台框架 -->
+
+                            <button  class="muted"  type="button" style="width:80px" >静音/取消</button><!-- 静音/取消按钮，宽度设置为80像素 -->
+                            <!-- <img class="bofang" src="img/12.jpg" > -->
+                            <button class="play" type="button" style="width:80px">播放/暂停</button><!-- 播放/暂停按钮，宽度设置为80像素 -->
+                        </div>
+                        
+                        <div id="shangxia"><!-- 按钮框架中的第二部分控制框架 -->
+
+                            <button class="prefer" type="button">上一首</button><!-- 上一首按钮 -->
+                            <span style="color:white;">音量</span>
+                            <input class="volume" type="range"  min="0" max="1"step="0.05"><!-- 音量按钮，最小为0，最大为1，每次滑动增减度为0.05 -->
+                            <button class="next" type="button">下一首</button><!-- 下一首按钮 -->
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<script type="text/javascript">
+			var index=0;
+			
+			var srcs=['img/Rain-秦基博.mp3','img/陈慧娴-傻女.mp3','img/beautiful world.mp3','img/BEYOND - 真的爱你.mp3','img/林志美-初恋.mp3','img/Tank - 千年泪.mp3','img/陈奕迅 - 让我留在你身边.mp3','img/萧亚轩 - 遗失的心跳.mp3','img/雲翼星辰 - 黑暗森林.mp3','img/郑欣宜 - 上心.mp3'];/* 音乐列表 */
+            var imgArr=['img/言ノ葉 (言语)-秦基博 (はたもとひろ).jpg','img/娴情-陈慧娴.jpg','img/Beautiful World . Kiss & Cry-宇多田光 (宇多田ヒカル).jpg','img/BEYOND IV-BEYOND.jpg','img/什么是缘分-林志美.jpg','img/天外飞仙 电视原声带-Tank.jpg','img/让我留在你身边-陈奕迅.jpg','img/SUPER GIRL 爱无畏-萧亚轩.jpg','img/黑暗森林.jpg','img/故事的配角-郑欣宜.jpg'];/* 音乐对应图片列表 */
+			var audio =document.querySelector("audio");/* 默认播放器 */
+			var playBtn =document.querySelector(".play");/* 播放*/
+			var mutedBtn =document.querySelector(".muted");/* 静音 */
+			var volumnBtn=document.querySelector(".volume");/* 音量 */
+			var bofang= document.querySelector('.bofang');
+			var prefer =document.querySelector(".prefer");/* 上一首 */
+			var nextBtn=document.querySelector(".next");/* 下一首 */
+			var yinyue =document.querySelector(".yinyue");/* 播放器显示 */
+			var bofang1=document.querySelector(".bofang1");/* 第一首歌曲 */
+            var bofang2=document.querySelector(".bofang2");/* 第二首歌曲 */
+            var bofang3=document.querySelector(".bofang3");/* 第三首歌曲 */
+            var bofang4=document.querySelector(".bofang4");/* 第四首歌曲 */
+            var bofang5=document.querySelector(".bofang5");/* 第五首歌曲 */
+            var bofang6=document.querySelector(".bofang6");/* 第六首歌曲 */
+            var bofang7=document.querySelector(".bofang7");/* 第七首歌曲 */
+            var bofang8=document.querySelector(".bofang8");/* 第八首歌曲 */
+            var bofang9=document.querySelector(".bofang9");/* 第九首歌曲 */
+			var bofang10=document.querySelector(".bofang10");/* 第十首歌曲 */
+
+
+			playBtn.onclick=function(){/* 点击播放/暂停按钮事件 */
+				if(audio.paused===true){/* 真为播放 */
+					audio.play();
+					// bofang.src='img/播放.png';
+					audio.value="播放";
+					
+				}else{
+					audio.pause();/* 假为暂停 */
+					// bofang.src ='img/暂停.png';
+					audio.value="暂停";
+				}
+				
+			}
+			mutedBtn.onclick=function(){/* 静音/取消按钮事件 */
+				if(audio.muted==true){/* 真为静音 */
+					audio.muted=false;/* 假为取消 */
+				}
+				else{
+					audio.muted=true;
+					bofang.src ='img/静音.png';
+				}
+			}
+			volumnBtn.onchange=function(){
+			     audio.volume=volumnBtn.value;
+			}
+			prefer.onclick=function(){/* 上一曲按钮事件 */
+				index--;
+				if(index<0){/* 每次点击index加一 */
+					index=srcs.length-1;
+				}
+				audio.srcs=srcs[index];
+				yinyue.src=imgArr[index];
+                audio.play();/* 点击后播放，这里好像有点问题，失效？ */
+				
+			}
+			
+			nextBtn.onclick=function(){/* 下一曲按钮事件 */
+				index++;
+				if(index==srcs.length){/* 每次点击index加一 */
+					index=0;
+				}
+				audio.src=srcs[index];
+				yinyue.src=imgArr[index];
+                audio.play();/* 点击后播放 */
+			}
+
+
+            bofang1.onclick=function(){
+                audio.src=srcs[0];
+                yinyue.src=imgArr[0];
+                audio.play();
+            }
+            bofang2.onclick=function(){
+                audio.src=srcs[1];
+                yinyue.src=imgArr[1];
+                audio.play();
+            }
+            bofang3.onclick=function(){
+                audio.src=srcs[2];
+                yinyue.src=imgArr[2];
+                audio.play();
+            }
+            bofang4.onclick=function(){
+                audio.src=srcs[3];
+                yinyue.src=imgArr[3];
+                audio.play();
+            }
+            bofang5.onclick=function(){
+                audio.src=srcs[4];
+                yinyue.src=imgArr[4];
+                audio.play();
+            }
+            bofang6.onclick=function(){
+                audio.src=srcs[5];
+                yinyue.src=imgArr[5];
+                audio.play();
+            }
+            bofang7.onclick=function(){
+                audio.src=srcs[6];
+                yinyue.src=imgArr[6];
+                audio.play();
+            }
+            bofang8.onclick=function(){
+                audio.src=srcs[7];
+                yinyue.src=imgArr[7];
+                audio.play();
+            }
+            bofang9.onclick=function(){
+                audio.src=srcs[8];
+                yinyue.src=imgArr[8];
+                audio.play();
+            }
+            bofang10.onclick=function(){
+                audio.src=srcs[9];
+                yinyue.src=imgArr[9];
+                audio.play();
+            }
+		</script>
+	</body>
+</html>
