@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: url(/img2/musicbeijing.png);
+}
+.main
+{
+    width: 100%;
+    height:930px;
+    
+}
+.fmain
+{
+    width: 100%;
+    height:930px;
+    margin-top: 20px;
+}
+.left
+{
+    width:65%;
+    height:800px;
+    float:left;
+}
+table
+{
+    background-color: aliceblue;
+    position: absolute;
+    left: 100px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    border-radius: 30px;
+
+    /* box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.5); */
+
+    /* border: solid 2px #dfdfdf; */
+}
+td
+{
+    height: 60px;
+}
+tr
+{
+    text-align: center;
+}
+#right
+{
+    width:35%;
+    height:800px;
+    float:right;
+}
+    .yinyue {
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid aqua; */
+        box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        -moz-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        margin-top: 100px;
+    }
+    
+    
+    .bofang  {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(6, 230, 230);
+    }
+    .muted ,.play,.prefer,.next{
+        width: 60px;
+        height: 30px;
+        background-color:rgb(6, 230, 230);
+        text-align: center;
+        line-height: 30px;
+    }
+    button
+    {
+        background-color:rgb(6, 230, 230);
+        border-radius: 3px;/*让按钮变得圆滑⼀点*/
+        border-width: 0;/*消去按钮丑的边框*/
+        margin: 0;
+        outline: none;/*取消轮廓*/
+        cursor: pointer;/*设置⿏标箭头⼿势*/
+    }
+    button:hover{/*⿏标移动时的颜⾊变化*/
+    background-color:blanchedalmond;
+    }   
+    #kongzhi
+    {
+        margin: 100px 100px;
+    }
+    #shangxia
+    {
+        margin: 100px 20px;
+    }
+
+
+    .container
+{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.channel {
+    position   : absolute;
+    width      : 400px;
+    text-align : center;
+    top        : 50%;
+    left       : 50%;
+    transform  : translate(-50%, -200px);
+    font-size  : 30px;
+    font-weight: bold;
+    
+}
+
+nav {
+    position        : relative;
+    width           : 400px;
+    height          : 50px;
+    background-color: var(--nav-background-color);
+    border-radius   : 8px;
+    box-shadow      : 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+nav a {
+    position   : relative;
+    display    : block;
+    float      : left;
+    font-size  : 15px;
+    line-height: 50px;
+
+    height             : 50px;
+    color              :black;
+    text-transform     : uppercase;
+    text-decoration    : none;
+    text-align         : center;
+    /* background-color: #00b894; */
+    z-index            : 10;
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+
+nav a:nth-child(2) {
+    width: 100px;
+}
+
+nav a:nth-child(3) {
+    width: 100px;
+}
+
+nav a:nth-child(4) {
+    width: 100px;
+}
+
+nav .animation {
+    position        : absolute;
+    height          : 100%;
+    background-color:rgb(11, 252, 252);
+    z-index         : 9;
+    border-radius   : 8px;
+    transition: all 0.3s;
+}
+
+.start-home,
+nav a:nth-child(1):hover~.animation {
+    width: 100px;
+    left : 0px;
+}
+.start-about,
+nav a:nth-child(2):hover~.animation {
+    width: 100px;
+    left : 100px;
+}
+.start-blog,
+nav a:nth-child(3):hover~.animation {
+    width: 100px;
+    left : 200px;
+}
+.start-protfolio,
+nav a:nth-child(4):hover~.animation {
+    width: 100px;
+    left : 300px;
+}
